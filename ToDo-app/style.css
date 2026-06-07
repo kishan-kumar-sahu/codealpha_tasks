@@ -1,0 +1,157 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin: 30px 0;
+    width: 100%;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg,#4f46e5,#7c3aed);
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.main-container{
+  width: 800px;
+  max-width: 95%;
+}
+
+#heading{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.container{
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.input-section{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.inputbox{
+  flex: 1;
+  height: 50px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+#inputdate{
+  width: 180px;
+  height: 50px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.inputbox:focus,
+#inputdate:focus{
+  outline: none;
+  border-color: #6366f1;
+}
+
+#btnid{
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  background: #22c55e;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnid:hover{
+  transform: translateY(-2px);
+  background: #16a34a;
+}
+
+.todoContainer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 110px;
+  gap: 15px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#createitem{
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #1f2937;
+  border-left: 5px solid #6366f1;
+}
+
+#createdate{
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: #475569;
+  font-weight: 500;
+}
+
+.createbtn{
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  background: #ef4444;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.createbtn:hover{
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px){
+
+  .input-section{
+    flex-direction: column;
+  }
+
+  .inputbox,
+  #inputdate,
+  #btnid{
+    width: 100%;
+  }
+
+  .todoContainer{
+    grid-template-columns: 1fr;
+  }
+
+  #createdate{
+    text-align: left;
+  }
+}
