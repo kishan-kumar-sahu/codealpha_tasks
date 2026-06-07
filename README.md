@@ -27,5 +27,9 @@ A simple and responsive Todo App built using HTML, CSS, and JavaScript.
 5. Click Delete to remove a task.
 6. Tasks remain saved even after refreshing the page.
 
+<<<<<<< HEAD
 ## Project Structure
+=======
+
+>>>>>>> 5289048e6e2ae904bab3d4787063fb926ddedca4
 
